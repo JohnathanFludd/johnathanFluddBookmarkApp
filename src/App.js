@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App">
+        <div id="bookmark-list-section">
+            <button id="add-bookmark" type="button">New</button>
+            <label htmlFor="filter" className="Filter-By">Filter By</label>
+            <select id="filter" name="fonts">
+                <option value="">All</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Star</option>
+                <option value="3">3 Star</option>
+                <option value="4">4 Star</option>
+                <option value="5">5 Star</option>
+            </select>
+
+            <ul id="bookmark-list" className=""> </ul>
+        </div>        
     </div>
   );
 }
